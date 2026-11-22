@@ -1,0 +1,76 @@
+backend:
+  name: github
+  repo: Keglammedia/coppermanehairstudio
+  branch: main
+
+media_folder: images
+public_folder: /images
+
+collections:
+  - name: site
+    label: Website
+    files:
+      - name: site
+        label: Home Page Content
+        file: site.json
+        fields:
+          - { label: Announcement bar (optional), name: announcement, widget: string, required: false }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Intro paragraph, name: intro, widget: text, required: false }
+          - { label: Hero background photo (optional), name: hero_image, widget: image, required: false }
+          - { label: Booking link (optional), name: booking_url, widget: string, required: false }
+          - { label: Phone, name: phone, widget: string, required: false }
+          - { label: Email, name: email, widget: string, required: false }
+          - label: Services
+            name: services
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Name, name: title, widget: string }
+              - { label: Description, name: description, widget: string, required: false }
+              - { label: Price, name: price, widget: string, required: false }
+          - { label: About title, name: about_title, widget: string, required: false }
+          - { label: About text, name: about_text, widget: text, required: false }
+          - label: About highlights
+            name: about_points
+            widget: list
+            summary: "{{fields.text}}"
+            fields:
+              - { label: Highlight, name: text, widget: string }
+          - label: Reviews
+            name: reviews
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Review, name: quote, widget: text }
+              - { label: Client name, name: name, widget: string }
+          - label: Team
+            name: team
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string, required: false }
+              - { label: Photo, name: photo, widget: image, required: false }
+          - label: Gallery
+            name: gallery
+            widget: list
+            add_to_top: true
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: Photo, name: image, widget: image }
+              - { label: Caption, name: caption, widget: string, required: false }
+          - { label: Instagram address, name: instagram, widget: string, required: false }
+          - { label: Facebook address, name: facebook, widget: string, required: false }
+          - { label: TikTok address, name: tiktok, widget: string, required: false }
+          - { label: YouTube address, name: youtube, widget: string, required: false }
+          - label: Locations
+            name: locations
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Address, name: address, widget: text }
+              - { label: Phone, name: phone, widget: string, required: false }
+              - { label: Email, name: email, widget: string, required: false }
+              - { label: Hours, name: hours, widget: text, required: false }
