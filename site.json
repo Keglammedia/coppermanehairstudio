@@ -69,23 +69,27 @@
   ],
   "gallery": [
     {
-      "image": "https://picsum.photos/seed/hair1/800/1000",
+      "image": "/images/2026-11-21_19-00-24.png",
+      "caption": ""
+    },
+    {
+      "image": "/images/2026-11-21_19-00-17.png",
       "caption": "Sample photo"
     },
     {
-      "image": "https://picsum.photos/seed/hair2/800/1000",
+      "image": "/images/2026-11-21_18-59-51.png",
       "caption": "Sample photo"
     },
     {
-      "image": "https://picsum.photos/seed/hair3/800/1000",
+      "image": "/images/IMG_4044.jpeg",
       "caption": "Sample photo"
     },
     {
-      "image": "https://picsum.photos/seed/hair4/800/1000",
+      "image": "/images/IMG_4045.jpeg",
       "caption": "Sample photo"
     }
   ],
-  "instagram": "",
+  "instagram": "@hairbyalliewulff",
   "facebook": "",
   "tiktok": "",
   "youtube": "",
@@ -95,7 +99,7 @@
       "address": "123 Main Street\nYour City, ST 00000",
       "phone": "(000) 000-0000",
       "email": "hello@example.com",
-      "hours": "Tue to Fri: 9am to 6pm\nSat: 9am to 3pm\nSun and Mon: Closed"
+      "hours": "By Appointment"
     }
   ]
 }
