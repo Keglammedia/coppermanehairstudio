@@ -1,30 +1,30 @@
 {
   "announcement": "Copper Mane Hair Studio",
   "tagline": "Professioinal Hair Stylist at Sola Salons",
-  "intro": "Allie Wulff: Owner of Copper Mane Hair Studio\n@bellamihairpro Certified",
+  "intro": "Add information here \n@bellamihairpro Certified",
   "hero_image": "/images/IMG_4045.jpeg",
   "booking_url": "booking link if wanted",
   "phone": "(000) 000-0000",
-  "email": "instagram: @hairbyalliewulff",
+  "email": "add Email if wanted",
   "services": [
     {
-      "title": "Cuts and Styling",
-      "description": "Consultation, cut and finish.",
+      "title": "Excample - Cuts and Styling",
+      "description": "Example - Consultation, cut and finish.",
       "price": "From $xx"
     },
     {
-      "title": "Color",
-      "description": "Single process, roots and glossing.",
+      "title": "Add here",
+      "description": "Add here",
       "price": "From $xx"
     },
     {
-      "title": "Blonding and Balayage",
-      "description": "Dimensional color, blended to last.",
+      "title": "Add here",
+      "description": "Add here",
       "price": "From $00"
     },
     {
-      "title": "Treatments and Blowouts",
-      "description": "Smoothing, conditioning and styling.",
+      "title": "Add here",
+      "description": "Add here",
       "price": "From $00"
     }
   ],
@@ -32,13 +32,13 @@
   "about_text": "Write a short story about the studio here.\n\nA second paragraph is optional.",
   "about_points": [
     {
-      "text": "Every visit starts with a consultation"
+      "text": "Add Products here if wanted"
     },
     {
-      "text": "Products we use and recommend"
+      "text": "Add products here if wanted"
     },
     {
-      "text": "A relaxed, welcoming space"
+      "text": "Add products here if wanted"
     }
   ],
   "reviews": [
@@ -59,7 +59,7 @@
     {
       "name": "Allie Wulff",
       "role": "Owner and Stylist",
-      "photo": "/images/2026-11-21_19-29-00.png"
+      "photo": ""
     },
     {
       "name": "Stylist Two",
@@ -68,18 +68,6 @@
     }
   ],
   "gallery": [
-    {
-      "image": "/images/2026-11-21_19-00-24.png",
-      "caption": ""
-    },
-    {
-      "image": "/images/2026-11-21_19-00-17.png",
-      "caption": "Sample photo"
-    },
-    {
-      "image": "/images/2026-11-21_18-59-51.png",
-      "caption": "Sample photo"
-    },
     {
       "image": "/images/IMG_4044.jpeg",
       "caption": "Sample photo"
