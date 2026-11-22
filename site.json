@@ -1,0 +1,50 @@
+{
+  "announcement": "Now booking appointments. Call or book online.",
+  "tagline": "Cuts, color and styling with a warm touch.",
+  "intro": "Tell visitors what makes your studio different in a sentence or two.",
+  "hero_image": "",
+  "booking_url": "",
+  "phone": "(000) 000-0000",
+  "email": "hello@example.com",
+  "services": [
+    { "title": "Cuts and Styling", "description": "Consultation, cut and finish.", "price": "From $00" },
+    { "title": "Color", "description": "Single process, roots and glossing.", "price": "From $00" },
+    { "title": "Blonding and Balayage", "description": "Dimensional color, blended to last.", "price": "From $00" },
+    { "title": "Treatments and Blowouts", "description": "Smoothing, conditioning and styling.", "price": "From $00" }
+  ],
+  "about_title": "About the Studio",
+  "about_text": "Write a short story about the studio here.\n\nA second paragraph is optional.",
+  "about_points": [
+    { "text": "Every visit starts with a consultation" },
+    { "text": "Products we use and recommend" },
+    { "text": "A relaxed, welcoming space" }
+  ],
+  "reviews": [
+    { "quote": "Sample review. Replace with a real client review (with their permission).", "name": "Client name" },
+    { "quote": "Sample review. Replace with a real client review (with their permission).", "name": "Client name" },
+    { "quote": "Sample review. Replace with a real client review (with their permission).", "name": "Client name" }
+  ],
+  "team": [
+    { "name": "Stylist One", "role": "Owner and Stylist", "photo": "" },
+    { "name": "Stylist Two", "role": "Stylist", "photo": "" }
+  ],
+  "gallery": [
+    { "image": "https://picsum.photos/seed/hair1/800/1000", "caption": "Sample photo" },
+    { "image": "https://picsum.photos/seed/hair2/800/1000", "caption": "Sample photo" },
+    { "image": "https://picsum.photos/seed/hair3/800/1000", "caption": "Sample photo" },
+    { "image": "https://picsum.photos/seed/hair4/800/1000", "caption": "Sample photo" }
+  ],
+  "instagram": "",
+  "facebook": "",
+  "tiktok": "",
+  "youtube": "",
+  "locations": [
+    {
+      "name": "Copper Mane Hair Studio",
+      "address": "123 Main Street\nYour City, ST 00000",
+      "phone": "(000) 000-0000",
+      "email": "hello@example.com",
+      "hours": "Tue to Fri: 9am to 6pm\nSat: 9am to 3pm\nSun and Mon: Closed"
+    }
+  ]
+}
