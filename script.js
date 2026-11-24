@@ -11,6 +11,19 @@ function hideIfEmpty(sectionId, list) {
   if (!list || !list.length) $(sectionId).hidden = true;
 }
 
+function accentLast(node, text, cls) {
+  node.textContent = "";
+  const w = (text || "").split(" ");
+  if (w.length > 2) {
+    node.append(w.slice(0, -2).join(" ") + " ");
+    node.append(el("span", cls, w.slice(-2).join(" ")));
+  } else {
+    node.textContent = text || "";
+  }
+}
+
+function isWeb(link) { return /^https?:/i.test(link || ""); }
+
 fetch("site.json", { cache: "no-store" })
   .then(r => r.json())
   .then(d => {
@@ -20,21 +33,22 @@ fetch("site.json", { cache: "no-store" })
       $("announce").hidden = false;
     }
 
-    // Hero
-    $("tagline").textContent = d.tagline || "";
-    if (d.hero_image) {
-      $("top").style.backgroundImage =
-        'linear-gradient(rgba(30,20,14,.55), rgba(30,20,14,.55)), url("' + d.hero_image + '")';
-    }
-    $("intro").textContent = d.intro || "";
-
     // Booking links
     const tel = d.phone ? "tel:" + d.phone.replace(/[^0-9+]/g, "") : "";
     const book = d.booking_url || tel || "#locations";
     document.querySelectorAll(".book").forEach(a => {
       a.href = book;
-      if (d.booking_url) { a.target = "_blank"; a.rel = "noopener"; }
+      if (isWeb(book)) { a.target = "_blank"; a.rel = "noopener"; }
     });
+
+    // Hero (the last two words of the headline get the green underline)
+    accentLast($("tagline"), d.tagline, "hl");
+    $("intro").textContent = d.intro || "";
+    if (d.hero_image) {
+      $("top").classList.add("has-photo");
+      $("top").style.backgroundImage =
+        'linear-gradient(rgba(10,20,25,.6), rgba(10,20,25,.6)), url("' + d.hero_image + '")';
+    }
 
     // Services
     const services = d.services || [];
@@ -48,7 +62,7 @@ fetch("site.json", { cache: "no-store" })
     hideIfEmpty("services", services);
 
     // About
-    $("aboutTitle").textContent = d.about_title || "About Us";
+    $("aboutTitle").textContent = d.about_title || "About the Studio";
     (d.about_text || "").split(/\n\s*\n/).forEach(t => {
       if (t.trim()) $("aboutText").append(el("p", "", t.trim()));
     });
@@ -143,7 +157,6 @@ fetch("site.json", { cache: "no-store" })
     });
     hideIfEmpty("locations", locations);
 
-    // Footer contact
-    const bits = [d.phone, d.email].filter(Boolean);
-    $("footContact").textContent = bits.join("  |  ");
+    // Footer contact (plain text)
+    $("footContact").textContent = [d.phone, d.email].filter(Boolean).join("  |  ");
   });
