@@ -100,8 +100,9 @@ fetch("site.json", { cache: "no-store" })
     });
     hideIfEmpty("team", team);
 
-    // Gallery
-    const gallery = d.gallery || [];
+        // Gallery: one row with arrows (change GALLERY_MAX to set the photo limit)
+    const GALLERY_MAX = 12;
+    const gallery = (d.gallery || []).slice(0, GALLERY_MAX);
     gallery.forEach(g => {
       const img = el("img");
       img.src = g.image;
@@ -109,7 +110,23 @@ fetch("site.json", { cache: "no-store" })
       img.loading = "lazy";
       $("galleryGrid").append(img);
     });
-    if (!gallery.length) $("galleryGrid").hidden = true;
+    const strip = $("galleryGrid");
+    const prev = $("galPrev");
+    const next = $("galNext");
+    function updateArrows() {
+      prev.disabled = strip.scrollLeft <= 4;
+      next.disabled = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 4;
+    }
+    function slide(dir) {
+      strip.scrollBy({ left: dir * strip.clientWidth * 0.8, behavior: "smooth" });
+    }
+    prev.addEventListener("click", () => slide(-1));
+    next.addEventListener("click", () => slide(1));
+    strip.addEventListener("scroll", updateArrows);
+    window.addEventListener("resize", updateArrows);
+    strip.querySelectorAll("img").forEach(i => i.addEventListener("load", updateArrows));
+    updateArrows();
+    if (!gallery.length) document.querySelector(".slider").hidden = true; $("galleryGrid").hidden = true;) $("galleryGrid").hidden = true;
 
     // Social links
     [["Instagram", d.instagram], ["Facebook", d.facebook], ["TikTok", d.tiktok], ["YouTube", d.youtube]]
