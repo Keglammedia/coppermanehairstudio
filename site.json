@@ -1,11 +1,11 @@
 {
   "announcement": "Copper Mane Hair Studio",
-  "tagline": "Professioinal Hair Stylist at Sola Salons",
-  "intro": "Add information here \n@bellamihairpro Certified",
+  "tagline": "Web Site Reserved for Owner to Update",
+  "intro": "Allie Wulff is an independent hairstylist and the owner of Copper Mane Hair Studio in Peoria, Arizona",
   "hero_image": "/images/IMG_4045.jpeg",
-  "booking_url": "booking link if wanted",
+  "booking_url": "Under Construction - Available for Owner Update",
   "phone": "(000) 000-0000",
-  "email": "add Email if wanted",
+  "email": "Under Construction - Available for Owner Update",
   "services": [
     {
       "title": "Example -  Cuts and Styling",
@@ -28,31 +28,31 @@
       "price": "From $00"
     }
   ],
-  "about_title": "About the Studio",
-  "about_text": "Write a short story about the studio here.\n\nA second paragraph is optional.",
+  "about_title": "Under Construction - Available for Owner Update",
+  "about_text": "Under Construction - Available for Owner Update",
   "about_points": [
     {
       "text": "Add Products here if wanted"
     },
     {
-      "text": "Add products here if wanted"
+      "text": "Under Construction - Available for Owner Update"
     },
     {
-      "text": "Add products here if wanted"
+      "text": "Under Construction - Available for Owner Update"
     }
   ],
   "reviews": [
     {
-      "quote": "Sample review. Replace with a real client review (with their permission).",
+      "quote": "Under Construction - Available for Owner Update",
       "name": "Client name"
     },
     {
-      "quote": "Sample review. Replace with a real client review (with their permission).",
-      "name": "Client name"
+      "quote": "Under Construction - Available for Owner Update",
+      "name": "Under Construction - Available for Owner Update"
     },
     {
-      "quote": "Sample review. Replace with a real client review (with their permission).",
-      "name": "Client name"
+      "quote": "Under Construction - Available for Owner Update",
+      "name": "Under Construction - Available for Owner Update"
     }
   ],
   "team": [
@@ -62,8 +62,8 @@
       "photo": ""
     },
     {
-      "name": "Stylist Two",
-      "role": "Stylist",
+      "name": "Under Construction - Available for Owner Update",
+      "role": "Under Construction - Available for Owner Update",
       "photo": ""
     }
   ],
@@ -77,17 +77,17 @@
       "caption": "Sample photo"
     }
   ],
-  "instagram": "@hairbyalliewulff",
-  "facebook": "",
+  "instagram": "Under Construction - Available for Owner Update",
+  "facebook": "Under Construction - Available for Owner Update",
   "tiktok": "",
   "youtube": "",
   "locations": [
     {
       "name": "Copper Mane Hair Studio",
-      "address": "Studio 21 inside Sola Salons\n 24650 N Lake Pleasant Pkwy, Suite 101\nPeoria, AZ 85383",
-      "phone": "(000) 000-0000",
-      "email": "hello@example.com",
-      "hours": "By Appointment"
+      "address": "Under Construction - Available for Owner Update",
+      "phone": "Under Construction - Available for Owner Update",
+      "email": "Under Construction - Available for Owner Update",
+      "hours": "Under Construction - Available for Owner Update"
     }
   ]
 }
